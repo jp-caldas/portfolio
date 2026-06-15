@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "pdfResume": "Download PDF Resume"
+  },
+  "hero": {
+    "greeting": "I'm Pedro",
+    "title": "Data Analyst | Analytics Engineer | AI Specialist",
+    "description": "Data and AI specialist focused on Analytics Engineering and Workflow Automation. Proven track record of delivering tangible ROI and eliminating manual processes through data-driven software engineering."
+  },
+  "about": {
+    "title": "About Me",
+    "number": "( 01 )",
+    "description": "Data and AI specialist with strong experience in migrating to modern cloud infrastructures (Dataform/GCP) and developing AI Agents (n8n/RAG) that connect LLMs to business processes. History marked by delivering measurable ROI and eliminating manual processes through data-oriented software engineering.",
+    "years": "Years of experience",
+    "companies": "Companies served",
+    "projects": "Projects delivered",
+    "languages": "Languages"
+  },
+  "experience": {
+    "title": "Experience",
+    "number": "( 02 )"
+  },
+  "education": {
+    "title": "Education & Skills",
+    "number": "( 03 )"
+  },
+  "projects": {
+    "title": "Latest Works",
+    "number": "( 04 )"
+  },
+  "contact": {
+    "title": "Contact",
+    "number": "( 05 )"
+  },
+  "footer": {
+    "designedBy": "Designed by",
+    "distributedBy": "Distributed by"
+  }
+}

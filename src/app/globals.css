@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #fe4300;
+  --color-secondary: #868686;
+  --color-softGray: #f0f0f0;
+  --color-mistGray: #d7dcdd;
+  --color-gray: #c0d8e0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl xl:text-7xl font-semibold leading-tight;
+}
+
+@media (min-width: 96rem) {
+  h1 {
+    font-size: 85px;
+  }
+}
+
+h2 {
+  @apply text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold;
+}
+
+@media (min-width: 80rem) {
+  h2 {
+    font-size: 65px;
+  }
+}
+
+h3 {
+  @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold;
+}
+
+p {
+  @apply text-base text-secondary;
+}
+
+button:before {
+  content: "";
+  z-index: 0;
+  background-color: #fe4300;
+  width: 100%;
+  height: 0;
+  transition: height 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+button:hover:before {
+  height: 100%;
+}
+
+.wave {
+  transform-origin: 70% 70%;
+  animation: wave-animation 2.5s infinite;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@media print {
+  body {
+    color: #000 !important;
+    background: #fff !important;
+  }
+  .navbar, .no-print, footer, header {
+    display: none !important;
+  }
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-section {
+    padding-top: 35px;
+  }
+}

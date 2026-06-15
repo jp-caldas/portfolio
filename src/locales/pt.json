@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "pdfResume": "Baixar Currículo PDF"
+  },
+  "hero": {
+    "greeting": "Sou Pedro",
+    "title": "Analista de Dados | Analytics Engineer | Especialista em IA",
+    "description": "Especialista em Dados e IA com foco em Analytics Engineering e Automação de Workflows. Histórico comprovado de entrega de ROI tangível e eliminação de processos manuais por meio de engenharia de software orientada a dados."
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "number": "( 01 )",
+    "description": "Especialista em Dados e IA com sólida experiência em migração para infraestruturas modernas na nuvem (Dataform/GCP) e desenvolvimento de Agentes de IA (n8n/RAG) que conectam LLMs aos processos de negócio. Histórico marcado pela entrega de ROI mensurável e eliminação de processos manuais.",
+    "years": "Anos de experiência",
+    "companies": "Empresas atendidas",
+    "projects": "Projetos entregues",
+    "languages": "Idiomas"
+  },
+  "experience": {
+    "title": "Experiência",
+    "number": "( 02 )"
+  },
+  "education": {
+    "title": "Formação & Habilidades",
+    "number": "( 03 )"
+  },
+  "projects": {
+    "title": "Trabalhos Recentes",
+    "number": "( 04 )"
+  },
+  "contact": {
+    "title": "Contato",
+    "number": "( 05 )"
+  },
+  "footer": {
+    "designedBy": "Desenhado por",
+    "distributedBy": "Distribuído por"
+  }
+}
