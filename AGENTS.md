@@ -3,7 +3,7 @@
 ## Repositório
 
 Portfólio pessoal de **Pedro Caldas** (`jp-caldas`), Data Analyst / Analytics Engineer / AI Specialist.
-Deploy automático via GitHub Actions para GitHub Pages.
+Deploy via GitHub Pages (HTML/CSS/JS puro, zero build).
 
 ## Content Sources (`conteudo/`)
 
@@ -15,31 +15,28 @@ Deploy automático via GitHub Actions para GitHub Pages.
 | `projetos-n8n-descrição.md` | Projetos #1, #2, #3 |
 | `perfil_foto.png` | Foto de perfil |
 
-## Tech Stack
+## Stack
 
-- **Framework:** Next.js 14 (App Router) + TypeScript
-- **Estilo:** Tailwind CSS v3
-- **i18n:** React Context com arquivos `src/locales/{pt,en}.json`
-- **Build:** `output: 'export'` (static site)
+- **HTML/CSS/JS puro** — sem frameworks, sem build, sem dependências
+- **Fonte:** Bricolage Grotesque (Google Fonts)
+- **i18n:** Atributos `data-pt` / `data-en` alternados via JS
+- **PDFs:** `pdfs/Pedro_Caldas_Data_Analyst-{locale}.pdf`
 
 ## Deploy
 
-- GitHub Actions em `.github/workflows/deploy.yml`
+- GitHub Pages serve direto da raiz (`index.html`)
 - URL: `jp-caldas.github.io/portfolio`
-- `basePath: '/portfolio'` no `next.config.js`
-- Node.js 20 no CI (local precisa Node >= 18.17)
+- Zero build — só git push
 
 ## Estrutura
 
 ```
-src/
-  app/          layout.tsx, page.tsx, globals.css
-  components/   7 componentes (Navbar, Hero, About, Experience, EducationSkills, Projects, Contact, Footer)
-  context/      LocaleContext (toggle PT/EN)
-  data/         profile.ts, experience.ts, education.ts, projects.ts
-  locales/      pt.json, en.json
-public/images/  SVGs + perfil_foto.png
-conteudo/       markdown fonte (não editar código gerado diretamente)
+index.html              site completo
+css/style.css           estilos
+js/script.js            toggle PT/EN + expandir projetos
+images/perfil_foto.png  foto de perfil
+pdfs/                   currículos em PDF
+conteudo/               markdown fonte (não editar código gerado)
 ```
 
 ## Seções do Site
@@ -48,17 +45,12 @@ Hero → About (01) → Experience (02) → Education & Skills (03) → Latest W
 
 5 projetos com detalhes expansíveis. Stats: 05+ anos, 05 empresas, 12+ projetos.
 
-## Commands
+## Como testar
 
-```bash
-npm run dev      # http://localhost:3000/portfolio
-npm run build    # static export to out/
-npm run lint     # lint check
-```
+Abrir `index.html` direto no navegador (sem servidor).
 
 ## Notas
 
-- Toggle de idioma está no Navbar (PT/EN)
-- Botão "Download PDF Resume" precisa ser conectado ao PDF (não gerado ainda)
-- Formulário de contato não tem backend — apenas frontend
+- Toggle de idioma no botão PT/EN no Navbar
+- Botão "Download PDF Resume" linka pro PDF correspondente ao idioma
 - Cor primária: `#fe4300` (laranja)
