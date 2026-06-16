@@ -9,9 +9,8 @@ export default function ContactSection() {
     <section className="no-print">
       <div className="container mx-auto px-4 sm:px-7">
         <div className="pt-16 md:pt-32 pb-20">
-          <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
+          <div className="flex items-center gap-2 border-b border-black pb-7 mb-9 md:mb-16">
             <h2>{locale === 'pt' ? 'Contato' : 'Contact'}</h2>
-            <p className="text-xl text-primary">( 05 )</p>
           </div>
           <div className="flex flex-col md:flex-row justify-between gap-12">
             <div className="space-y-6">

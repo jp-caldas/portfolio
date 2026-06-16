@@ -8,8 +8,17 @@ export default function HeroSection() {
   return (
     <section className="relative hero-section overflow-hidden pt-35 md:pt-40 pb-12 lg:pb-30 xl:pt-52">
       <div className="container mx-auto px-4 sm:px-7">
-        <div className="lg:flex grid grid-cols-1 sm:grid-cols-2 gap-7 md:gap-4 items-center">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-7 md:gap-4 items-center">
           <div className="flex flex-col gap-4 md:gap-7 max-w-2xl">
+            <div className="flex items-center justify-center md:justify-start -mb-2 md:hidden">
+              <img
+                alt="profile"
+                width={200}
+                height={200}
+                src="/portfolio/images/perfil_foto.png"
+                className="rounded-full object-cover w-48 h-48 border-4 border-softGray"
+              />
+            </div>
             <div>
               <div className="flex items-center gap-4">
                 <h1>{t({ pt: "Sou Pedro", en: "I'm Pedro" })}</h1>
@@ -29,7 +38,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="hidden lg:block absolute right-0 top-0 h-auto w-1/2">
+      <div className="hidden md:block absolute right-0 top-0 h-auto w-1/2">
         <img
           alt="profile"
           width={500}

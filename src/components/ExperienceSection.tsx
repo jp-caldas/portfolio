@@ -10,9 +10,8 @@ export default function ExperienceSection() {
     <section>
       <div className="py-16 md:py-32">
         <div className="container mx-auto px-4 sm:px-7">
-          <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
+          <div className="flex items-center gap-2 border-b border-black pb-7 mb-9 md:mb-16">
             <h2>{locale === 'pt' ? 'Experiência' : 'Experience'}</h2>
-            <p className="text-xl text-primary">( 02 )</p>
           </div>
           <div className="space-y-7 md:space-y-12">
             {experience.map((exp, i) => (
@@ -25,7 +24,7 @@ export default function ExperienceSection() {
                   <div className="absolute left-0 top-3 w-px h-40 bg-softGray"></div>
                   <div className="no-print absolute left-0 top-0 transform -translate-x-1/2">
                     <div className="no-print w-3.5 h-3.5 rounded-full border bg-white flex items-center justify-center border-black">
-                      {i === 1 && <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>}
+                      {i === 0 && <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>}
                     </div>
                   </div>
                   <div className="pl-4 lg:pl-7">

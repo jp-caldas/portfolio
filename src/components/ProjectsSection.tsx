@@ -71,9 +71,8 @@ export default function ProjectsSection() {
       <div className="bg-softGray">
         <div className="container mx-auto px-4 sm:px-7">
           <div className="py-16 xl:py-32">
-            <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 md:mb-16">
+<div className="flex items-center gap-2 border-b border-black pb-7 mb-9 md:mb-16">
               <h2>{locale === 'pt' ? 'Trabalhos Recentes' : 'Latest Works'}</h2>
-              <p className="text-xl text-primary">( 04 )</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 xl:gap-y-12">
               {projects.map((project) => (

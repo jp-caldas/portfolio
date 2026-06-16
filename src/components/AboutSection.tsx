@@ -16,9 +16,8 @@ export default function AboutSection() {
     <section>
       <div className="bg-softGray py-10 md:py-32">
         <div className="container mx-auto px-4 sm:px-7">
-          <div className="flex items-center justify-between gap-2 border-b border-black pb-7">
+          <div className="flex items-center gap-2 border-b border-black pb-7">
             <h2>{t({ pt: "Sobre Mim", en: "About Me" })}</h2>
-            <p className="text-xl text-primary">( 01 )</p>
           </div>
           <div className="pt-10 xl:pt-16">
             <div className="w-full max-w-4xl">
@@ -36,11 +35,11 @@ export default function AboutSection() {
                   </div>
                 ))}
               </div>
-              <div className="pt-8 xl:pt-14 flex flex-col sm:flex-row items-center gap-4">
-                <p className="text-base xl:text-xl text-black font-medium">{t({ pt: "Idiomas", en: "Languages" })}:</p>
-                <div className="flex flex-wrap justify-center items-center gap-2.5">
+              <div className="pt-8 xl:pt-14 flex flex-col items-start gap-3">
+                <p className="text-base text-black font-medium">{t({ pt: "Idiomas", en: "Languages" })}:</p>
+                <div className="flex flex-col items-start gap-2">
                   {languages.map((lang) => (
-                    <p key={lang.name.en} className="bg-white py-2 md:py-3.5 px-4 md:px-5 w-fit rounded-full text-base xl:text-xl">
+                    <p key={lang.name.en} className="bg-white py-1.5 px-3 w-fit rounded-full text-sm">
                       {lang.name[locale]} — {lang.level[locale]}
                     </p>
                   ))}

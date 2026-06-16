@@ -11,9 +11,8 @@ export default function EducationSkillsSection() {
       <div className="border-t border-softGray overflow-hidden">
         <div className="container mx-auto px-4 sm:px-7 relative z-10">
           <div className="relative z-10 py-16 md:py-32">
-            <div className="flex items-center justify-between gap-2 border-b border-black pb-7 mb-9 xl:mb-16">
+            <div className="flex items-center gap-2 border-b border-black pb-7 mb-9 xl:mb-16">
               <h2>{locale === 'pt' ? 'Formação & Habilidades' : 'Education & Skills'}</h2>
-              <p className="text-xl text-primary">( 03 )</p>
             </div>
             <div className="flex flex-col lg:flex-row gap-10 xl:gap-20">
               <div className="w-full lg:max-w-md flex flex-col gap-8">
