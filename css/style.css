@@ -248,12 +248,14 @@ img {
 @media (min-width: 48rem) {
   .hero {
     padding-top: 10rem;
+    min-height: 36rem;
   }
 }
 
 @media (min-width: 80rem) {
   .hero {
     padding-top: 13rem;
+    min-height: 44rem;
   }
 }
 
@@ -348,12 +350,11 @@ img {
     display: flex;
     position: absolute;
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: 5rem;
+    bottom: 3rem;
     width: 45%;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
   }
 
   .hero-photo-desktop img {
