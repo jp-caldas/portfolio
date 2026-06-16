@@ -17,8 +17,8 @@ export default function ExperienceSection() {
             {experience.map((exp, i) => (
               <div key={i} className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 md:gap-4 xl:gap-8 items-start relative">
                 <div>
-                  <h3 className="font-bold mb-2 text-black">{exp.period[locale]}</h3>
-                  <h4 className="text-lg font-normal">{exp.role[locale]}</h4>
+                  <p className="font-medium mb-1 text-black text-base">{exp.period[locale]}</p>
+                  <p className="text-base font-normal text-secondary">{exp.role[locale]}</p>
                 </div>
                 <div className="relative">
                   <div className="absolute left-0 top-3 w-px h-40 bg-softGray"></div>

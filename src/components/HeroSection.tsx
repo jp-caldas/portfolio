@@ -13,8 +13,6 @@ export default function HeroSection() {
             <div className="flex items-center justify-center md:justify-start -mb-2 md:hidden">
               <img
                 alt="profile"
-                width={200}
-                height={200}
                 src="/portfolio/images/perfil_foto.png"
                 className="rounded-full object-cover w-48 h-48 border-4 border-softGray"
               />
@@ -38,13 +36,11 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="hidden md:block absolute right-0 top-0 h-auto w-1/2">
+      <div className="hidden md:flex absolute right-0 top-0 bottom-0 w-1/2 items-center justify-center">
         <img
           alt="profile"
-          width={500}
-          height={500}
           src="/portfolio/images/perfil_foto.png"
-          className="absolute right-0 top-0 z-1 object-cover h-full"
+          className="object-contain max-w-full max-h-full p-8"
         />
       </div>
     </section>
